@@ -1,0 +1,22 @@
+{
+  "name": "create-www",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "create-www": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template/"
+  ],
+  "keywords": [
+    "create",
+    "react",
+    "vite",
+    "www",
+    "http"
+  ],
+  "author": "Sebastian Allegretta",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,8 @@
+template/client/node_modules/
+template/client/package-lock.json
+template/server/node_modules/
+template/server/package-lock.json
+template/node_modules/
+template/package-lock.json
+node_modules/
+package-lock.json
