@@ -4,13 +4,13 @@ import compression from 'vite-plugin-compression'
 import {resolve} from 'path'
 import {readdirSync} from 'fs'
 
-const files = readdirSync(resolve(__dirname,"public"),{"recursive": true})
+const files = readdirSync(resolve(__dirname,"src"),{"recursive": true})
     .filter(path=>path.endsWith(".html"))
-    .map(path=>resolve(__dirname,"public",path));
+    .map(path=>resolve(__dirname,"src",path));
 
 
 export default defineConfig({
-    root: resolve(__dirname,"public"),
+    root: resolve(__dirname,"src"),
     plugins: [
         react(),
         false??compression({algorithm:"gzip",ext:".gz",deleteOriginFile: false})
