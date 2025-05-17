@@ -1,9 +1,13 @@
 {
-    "name": "template",
-    "private": true,
-    "version": "0.0.0",
-    "scripts": {
-        "install": "cd server ; npm install ; cd ../client ; npm install",
-        "start": "cd client ; npm run build ; cd .. ; node server/"
+	"name": "template",
+	"private": true,
+	"version": "0.0.0",
+    "main": "src/index.js",
+	"scripts": {
+		"install": "cd ./client ; npm install",
+		"start": "cd client ; npm run build ; cd .. ; node ."
+	},
+    "dependencies": {
+        "styrene": "^0.5.0"
     }
 }
